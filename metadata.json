@@ -1,0 +1,6 @@
+{
+  "name": "PocketBoy",
+  "description": "Emulador de Game Boy (GB/GBC) e Game Boy Advance (GBA) com leitura automática de pasta de ROMs e salvamento em slots e SRAM.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

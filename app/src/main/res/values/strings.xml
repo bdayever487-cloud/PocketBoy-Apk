@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">PocketBoy</string>
+    <string name="nav_library">Jogos</string>
+    <string name="nav_saves">Saves</string>
+    <string name="nav_settings">Ajustes</string>
+
+    <string name="hero_title">Biblioteca Portátil</string>
+    <string name="hero_subtitle">Game Boy, Game Boy Color e Game Boy Advance</string>
+
+    <string name="folder_not_linked">Nenhuma pasta selecionada</string>
+    <string name="folder_linked_label">Pasta vinculada: %1$s</string>
+    <string name="action_select_folder">Selecionar pasta</string>
+    <string name="action_change_folder">Trocar pasta</string>
+    <string name="action_refresh_roms">Atualizar</string>
+    <string name="action_import_single_rom">Importar ROM avulsa</string>
+
+    <string name="empty_title">Configure sua pasta de ROMs</string>
+    <string name="empty_step_1">1. Crie uma pasta no gerenciador de arquivos do celular (ex: ROMs).</string>
+    <string name="empty_step_2">2. Coloque seus arquivos .gb, .gbc e .gba dentro dessa pasta.</string>
+    <string name="empty_step_3">3. Selecione a pasta abaixo e toque em Atualizar.</string>
+    <string name="empty_folder_no_roms">Nenhum arquivo .gb, .gbc ou .gba encontrado nesta pasta.</string>
+    <string name="empty_folder_hint">Adicione ROMs na pasta pelo gerenciador de arquivos e toque em Atualizar.</string>
+
+    <string name="filter_all">Todos</string>
+    <string name="filter_gb">GB</string>
+    <string name="filter_gbc">GBC</string>
+    <string name="filter_gba">GBA</string>
+    <string name="search_roms_hint">Buscar jogo na biblioteca…</string>
+
+    <string name="scan_complete_count">%1$d jogos encontrados</string>
+    <string name="scan_in_progress">Procurando ROMs…</string>
+    <string name="play_now">Jogar</string>
+    <string name="continue_game">Continuar</string>
+    <string name="rom_details">Detalhes do Cartucho</string>
+    <string name="save_slots_title">Slots de Salvamento</string>
+    <string name="saves_empty_title">Nenhum save encontrado</string>
+    <string name="saves_empty_subtitle">Inicie um jogo e use Salvar Rápido ou os Slots 1 a 4 para guardar seu progresso.</string>
+
+    <string name="slot_auto">Auto-Save</string>
+    <string name="slot_numbered">Slot %1$d</string>
+    <string name="slot_empty">Vazio</string>
+    <string name="action_save">Salvar</string>
+    <string name="action_load">Carregar</string>
+    <string name="action_quick_save">Salvar Rápido</string>
+    <string name="action_quick_load">Carregar Rápido</string>
+    <string name="action_reset_console">Reiniciar Console</string>
+    <string name="action_exit_game">Sair do Jogo</string>
+    <string name="action_resume">Continuar</string>
+
+    <string name="settings_storage_section">Pasta e Biblioteca</string>
+    <string name="settings_audio_haptics">Áudio e Vibração</string>
+    <string name="settings_video_section">Vídeo e Desempenho</string>
+    <string name="settings_controls_section">Controles na Tela</string>
+    <string name="setting_sound_title">Som do Emulador</string>
+    <string name="setting_sound_desc">Reproduzir canais de áudio originais (PSG / Direct Sound)</string>
+    <string name="setting_haptic_title">Vibração nos Botões</string>
+    <string name="setting_haptic_desc">Resposta tátil ao pressionar D-Pad e botões de ação</string>
+    <string name="setting_fast_forward_title">Velocidade de Avanço Rápido</string>
+    <string name="setting_gb_palette_title">Paleta do Game Boy Clássico</string>
+    <string name="setting_pixel_filter_title">Filtro Pixelado Nítido</string>
+    <string name="setting_pixel_filter_desc">Mantém pixels definidos (Nearest Neighbor) sem borrão</string>
+    <string name="setting_fps_title">Mostrar Contador de FPS</string>
+    <string name="setting_opacity_title">Opacidade dos Controles</string>
+
+    <string name="toast_state_saved">Estado salvo no %1$s</string>
+    <string name="toast_state_loaded">Estado carregado do %1$s</string>
+    <string name="toast_sram_saved">Progresso (SRAM) salvo</string>
+    <string name="toast_rom_load_error">Não foi possível ler o arquivo ROM selecionado.</string>
+</resources>
