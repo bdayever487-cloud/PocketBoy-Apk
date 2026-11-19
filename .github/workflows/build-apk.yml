@@ -43,12 +43,24 @@ jobs:
         run: |
           if [ -f gradlew ]; then chmod +x gradlew; fi
 
+      - name: Create debug.keystore (se não existir)
+        run: |
+          if [ ! -f debug.keystore ]; then
+            keytool -genkeypair -v -keystore debug.keystore \
+              -storepass android -keypass android -alias androiddebugkey \
+              -keyalg RSA -keysize 2048 -validity 10000 \
+              -dname "CN=Android Debug,O=Android,C=US"
+          fi
+
       - name: Build debug APK
         run: |
+          # Flags: o KSP falha com compilação "in-process" + paralelismo,
+          # então usamos o daemon do Kotlin e desligamos o paralelismo no CI.
+          FLAGS="-Pkotlin.compiler.execution.strategy=daemon -Dorg.gradle.parallel=false --stacktrace"
           if [ -f gradlew ]; then
-            ./gradlew assembleDebug --stacktrace
+            ./gradlew assembleDebug $FLAGS
           else
-            gradle assembleDebug --stacktrace
+            gradle assembleDebug $FLAGS
           fi
 
       - name: Upload APK
@@ -57,4 +69,3 @@ jobs:
           name: PocketBoy-debug-apk
           path: app/build/outputs/apk/debug/*.apk
           if-no-files-found: error
-
